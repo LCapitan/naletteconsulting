@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { Button } from "../../components";
-import { HomeBg, Logo } from "../../components/Icons/";
+import { Logo } from "../../components/Icons/";
 
 import styles from "./Home.module.scss";
 
@@ -14,7 +14,7 @@ export function Home() {
   return (
     <div className={styles.home}>
       <div className={styles.logo}>
-        <Logo />
+        <Logo gradient />
       </div>
       <h1>Nalette</h1>
       <h2>Consulting</h2>

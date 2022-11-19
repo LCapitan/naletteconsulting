@@ -12,15 +12,11 @@
 
   .logo {
     position: relative;
-    opacity: 0.15;
     margin-bottom: 50px;
 
     svg {
       width: 200px;
       height: auto;
-      path {
-        fill: $gulf;
-      }
     }
   }
 

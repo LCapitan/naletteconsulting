@@ -18,15 +18,15 @@ function MyApp({ Component, pageProps }: AppProps) {
         </Head>
         <DefaultSeo
           openGraph={{
-            url: "https://www.amelen.dev/",
-            title: "Austin's Portfolio",
-            description: "Austin is a developer and designer, Virginia, US.",
+            url: "https://www.naletteconsulting.com/",
+            title: "Nalette Consulting",
+            description: "Professional CPA from Virginia, US.",
             images: [
               {
-                url: "https://res.cloudinary.com/austinmel/image/upload/v1656678415/astro_iie61u.jpg",
-                width: 1440,
-                height: 1440,
-                alt: "astronaut illustration",
+                url: "https://res.cloudinary.com/austinmel/image/upload/v1668845074/naletteconsulting/og-image.png",
+                width: 1536,
+                height: 1234,
+                alt: "nalette consulting logo",
                 type: "image/jpeg",
               },
             ],
