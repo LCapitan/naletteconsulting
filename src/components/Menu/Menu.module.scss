@@ -1,0 +1,116 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 50px;
+  width: 100%;
+
+  @include md-max {
+    padding: 0 50px;
+  }
+
+  @include sm-max {
+    padding: 0 40px;
+  }
+}
+
+.menu {
+  background: lighten($mirage, 5%);
+  border-radius: 20px 0 0 20px;
+  box-shadow: 0px 10px 30px rgba(#000000, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  top: 2%;
+  left: 110%;
+  width: 40%;
+  height: 96%;
+  z-index: 10;
+  transition: 0.5s ease;
+
+  &.open {
+    left: 60%;
+  }
+
+  @include lg-max {
+    border-radius: 15px 0 0 15px;
+    width: 95%;
+
+    &.open {
+      left: 5%;
+    }
+  }
+
+  .nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    li {
+      text-align: center;
+
+      a {
+        color: $white;
+        display: inline-block;
+        font-family: $title;
+        font-size: 55px;
+        font-weight: 600;
+        opacity: 0.25;
+        padding: 15px 0;
+        position: relative;
+        transition: 0.5s ease;
+
+        &:hover,
+        &:focus {
+          font-size: 85px;
+          opacity: 1;
+        }
+
+        @include md-max {
+          font-size: 45px;
+          opacity: 1;
+          padding: 5px 0;
+
+          &:hover,
+          &:focus {
+            font-size: 45px;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .social {
+    display: none;
+
+    :global {
+      ul {
+        flex-direction: row;
+        gap: 20px;
+
+        li {
+          a {
+            opacity: 1;
+
+            svg {
+              fill: lighten($mirage, 40%);
+            }
+          }
+        }
+      }
+    }
+
+    @include lg-max {
+      display: block;
+    }
+  }
+}

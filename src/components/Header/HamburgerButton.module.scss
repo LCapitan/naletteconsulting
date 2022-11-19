@@ -1,0 +1,118 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.hamburger {
+  position: relative;
+  display: block;
+  right: 0;
+  width: 75px;
+  height: 29px;
+  transform: rotate(-90deg);
+
+  &:before {
+    background: lighten($mirage, 40%);
+    border-radius: 10px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 38px;
+    height: 5px;
+    transform: rotate(0deg);
+    transition: 0.25s ease;
+    transform-origin: center right;
+  }
+
+  &:after {
+    background: lighten($mirage, 40%);
+    border-radius: 10px;
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 38px;
+    height: 5px;
+    transform: rotate(0deg);
+    transition: 0.25s ease;
+    transform-origin: center right;
+  }
+
+  >div {
+    background: lighten($mirage, 40%);
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 38px;
+    height: 5px;
+    transform: translateY(-50%);
+    transition: 0.25s ease;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+
+    &:before {
+      background: $aquamarine;
+      right: 5px;
+      width: 40px;
+    }
+
+    &:after {
+      background: $aquamarine;
+      right: 10px;
+      width: 50px;
+    }
+
+    >div {
+      background: $aquamarine;
+      width: 75px;
+    }
+
+    @include sm-max {
+
+      &:before,
+      &:after,
+      >div {
+        right: 0;
+        width: 38px;
+      }
+    }
+  }
+
+  &.open {
+    >div {
+      width: 0;
+    }
+
+    &:before {
+      border-radius: 10px;
+      content: "";
+      display: block;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 34px;
+      transform: rotate(-45deg);
+      transition: 0.25s ease;
+    }
+
+    &:after {
+      border-radius: 10px;
+      content: "";
+      display: block;
+      opacity: 1;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 34px;
+      transform: rotate(45deg);
+      transition: 0.25s ease;
+    }
+  }
+}
