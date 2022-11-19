@@ -14,7 +14,7 @@ export function Home() {
   return (
     <div className={styles.home}>
       <div className={styles.logo}>
-        <Logo />
+        <Logo gradient />
       </div>
       <h1>Nalette</h1>
       <h2>Consulting</h2>
