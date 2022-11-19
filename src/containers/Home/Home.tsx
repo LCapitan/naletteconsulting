@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { Button } from "../../components";
-import { HomeBg, Logo } from "../../components/Icons/";
+import { Logo } from "../../components/Icons/";
 
 import styles from "./Home.module.scss";
 
