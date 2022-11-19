@@ -7,20 +7,20 @@ const Homepage: NextPage = () => {
   return (
     <>
       <NextSeo
-        title="Home | Austin Melendez"
-        description="Austin is a developer and designer from Virginia, US."
+        title="Home | Nalette Consulting"
+        description="Professional CPA from Virginia, US."
         defaultTitle="Welcome to Austin's Portfolio"
-        canonical="https://www.amelen.dev/"
+        canonical="https://www.naletteconsulting.com/"
         openGraph={{
-          url: "https://www.amelen.dev/",
-          title: "Austin's Portfolio",
-          description: "Austin is a developer and designer from Virginia, US.",
+          url: "https://www.naletteconsulting.com/",
+          title: "Nalette Consulting",
+          description: "Professional CPA from Virginia, US.",
           images: [
             {
-              url: "https://res.cloudinary.com/austinmel/image/upload/v1656678415/astro_iie61u.jpg",
+              url: "https://res.cloudinary.com/austinmel/image/upload/v1668845074/naletteconsulting/og-image.png",
             },
           ],
-          site_name: "Austin Melendez",
+          site_name: "Nalette Consulting",
         }}
       />
 
