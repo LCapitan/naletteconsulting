@@ -9,22 +9,23 @@ import Hamburger from "./HamburgerButton";
 import { SocialMenu } from "../SocialMenu/SocialMenu";
 
 import styles from "./Header.module.scss";
+import { Button } from "../Button";
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>
-        <Link href="/" passHref>
-          <Logo />
-        </Link>
+      <div className={styles.inner}>
+        <div className={styles.logo}>
+          <Link href="/" passHref>
+            <Logo gradient />
+          </Link>
+        </div>
+        <Menu />
+        <Button label="Contact" />
+        {/* <div className={styles.menuToggle}>
+          <Hamburger />
+        </div> */}
       </div>
-      {/* <div className={styles.menuToggle}>
-        <Hamburger />
-      </div>
-      <div className={styles.social}>
-        <SocialMenu />
-      </div> */}
-      <Menu />
     </header>
   );
 };

@@ -6,8 +6,6 @@ import UIContext from "../../context/UIContext";
 import Hamburger from "../Header/HamburgerButton";
 import Image from "next/image";
 
-import { SocialMenu } from "../SocialMenu/SocialMenu";
-
 import styles from "./Menu.module.scss";
 
 export default function Menu() {
@@ -17,30 +15,25 @@ export default function Menu() {
 
   return (
     <nav className={classnames(styles.menu, menuOpen && styles.open)}>
-      <div className={styles.container}>
-        <ul className={styles.nav}>
-          <li onClick={() => setMenuOpen(false)}>
-            <Link href="/">home</Link>
-          </li>
-          <li onClick={() => setMenuOpen(false)}>
-            <Link href="/about" passHref>
-              about
-            </Link>
-          </li>
-          <li onClick={() => setMenuOpen(false)}>
-            <Link href="/work">work</Link>
-          </li>
-          <li onClick={() => setMenuOpen(false)}>
-            <Link href="/blog">blog</Link>
-          </li>
-          <li>
-            <a href="mailto:austinjamesmelendez@gmail.com">contact</a>
-          </li>
-        </ul>
-        <div className={styles.social}>
-          <SocialMenu />
-        </div>
-      </div>
+      <ul className={styles.nav}>
+        <li onClick={() => setMenuOpen(false)}>
+          <Link href="/">Home</Link>
+        </li>
+        <li onClick={() => setMenuOpen(false)}>
+          <Link href="/about" passHref>
+            About
+          </Link>
+        </li>
+        <li onClick={() => setMenuOpen(false)}>
+          <Link href="/work">Services</Link>
+        </li>
+        <li onClick={() => setMenuOpen(false)}>
+          <Link href="/work">News</Link>
+        </li>
+        <li onClick={() => setMenuOpen(false)}>
+          <Link href="/work">Resources</Link>
+        </li>
+      </ul>
     </nav>
   );
 }

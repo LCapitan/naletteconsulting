@@ -8,35 +8,31 @@
   width: 100%;
   z-index: 99;
 
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
   @include md-max {
     padding: 0 40px;
   }
 
   .logo {
-    position: fixed;
-    top: 50px;
-    left: 40px;
-    width: 60px;
+    transform: scale(1);
     transition: 0.25s ease;
-    opacity: 0.15;
 
     :global {
       svg {
-        width: 60px;
+        width: 40px;
         height: auto;
-        path {
-          fill: $gulf;
-        }
       }
     }
 
     &:hover,
     &:focus {
-      :global {
-        svg {
-          fill: $mustard;
-        }
-      }
+      transform: scale(1.1);
     }
 
     @include lg-max {
@@ -45,26 +41,8 @@
     }
   }
 
-  .social {
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    z-index: 15;
-
-    @include lg-max {
-      display: none;
-    }
-  }
-
   .menuToggle {
-    position: fixed;
-    top: 70px;
-    right: 30px;
+    position: relative;
     z-index: 15;
-
-    @include lg-max {
-      top: 60px;
-      right: 15px;
-    }
   }
 }

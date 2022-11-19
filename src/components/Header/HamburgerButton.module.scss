@@ -39,7 +39,7 @@
     transform-origin: center right;
   }
 
-  >div {
+  > div {
     background: lighten($mirage, 40%);
     border-radius: 10px;
     display: block;
@@ -68,16 +68,15 @@
       width: 50px;
     }
 
-    >div {
+    > div {
       background: $aquamarine;
       width: 75px;
     }
 
     @include sm-max {
-
       &:before,
       &:after,
-      >div {
+      > div {
         right: 0;
         width: 38px;
       }
@@ -85,7 +84,7 @@
   }
 
   &.open {
-    >div {
+    > div {
       width: 0;
     }
 
