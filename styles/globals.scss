@@ -8,6 +8,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: $copy;
+  overflow: hidden;
 }
 
 html {
@@ -41,7 +42,6 @@ html {
   width: 83%;
   max-width: 1300px;
   padding: 0 40px;
-  overflow: hidden;
 
   @include lg-max {
     width: 100%;

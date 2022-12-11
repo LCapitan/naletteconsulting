@@ -21,7 +21,7 @@ const Header = () => {
           </Link>
         </div>
         <Menu />
-        <Button label="Contact" />
+        <Button label="Become a Client" />
         {/* <div className={styles.menuToggle}>
           <Hamburger />
         </div> */}

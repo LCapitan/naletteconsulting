@@ -5,62 +5,63 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
+  gap: 25px;
   position: relative;
   width: 100%;
 
-  .logo {
+  .hero {
     position: relative;
-    margin-bottom: 50px;
+    bottom: -80px;
+    flex: 1;
 
     svg {
-      width: 150px;
+      width: 150%;
       height: auto;
     }
   }
 
-  h1 {
-    -webkit-text-stroke: 2px $gulf;
-    color: $gulf;
-    font-family: $title;
-    font-size: 65px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    line-height: 65px;
-    margin: 0 0 25px;
-  }
+  .content {
+    flex: 1;
+    padding-top: 100px;
 
-  h2 {
-    color: $gulf;
-    font-family: $title;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    line-height: 24px;
-    margin: 0;
-    opacity: 0.5;
-  }
-
-  @include sm-max {
-    .logo {
-      svg {
-        width: 100px;
-      }
+    .tag {
+      border-radius: 4px;
+      color: $gulf;
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 25px;
+      padding: 10px 12px 10px 0;
+      position: relative;
     }
 
     h1 {
-      -webkit-text-stroke: 1px $gulf;
-      font-size: 45px;
-      line-height: 45px;
-      margin: 0 0 15px;
+      -webkit-text-stroke: 2px $gulf;
+      color: $gulf;
+      font-family: $copy;
+      font-size: 55px;
+      font-weight: bold;
+      line-height: 73px;
+      margin: 0 0 20px;
     }
 
-    h2 {
-      font-size: 20px;
-      line-height: 20px;
+    .tagline {
+      color: $gulf;
+      font-family: $copy;
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 37px;
+      margin: 0;
+      max-width: 80%;
+      opacity: 0.75;
     }
+
+    .actions {
+      margin: 45px 0 0;
+    }
+  }
+
+  @include sm-max {
   }
 }

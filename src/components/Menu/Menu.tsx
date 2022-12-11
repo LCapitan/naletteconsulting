@@ -28,10 +28,7 @@ export default function Menu() {
           <Link href="/work">Services</Link>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <Link href="/work">News</Link>
-        </li>
-        <li onClick={() => setMenuOpen(false)}>
-          <Link href="/work">Resources</Link>
+          <Link href="/work">Contact</Link>
         </li>
       </ul>
     </nav>
