@@ -1,0 +1,102 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.services {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 135px 0 100px;
+  position: relative;
+  width: 100%;
+
+  &:after {
+    background: rgba($spray, 0.2);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+  }
+
+  > .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .title {
+    -webkit-text-stroke: 2px $gulf;
+    color: $gulf;
+    font-family: $copy;
+    font-size: 41px;
+    font-weight: bold;
+    line-height: 57px;
+    margin: 0 0 30px;
+  }
+
+  .serviceList {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    list-style-type: none;
+    gap: 35px;
+    margin: 25px 0 0;
+    padding: 0;
+    width: 100%;
+
+    .serviceListItem {
+      // background: $gulf;
+      background: rgba($spray, 0.3);
+      border-radius: 20px;
+      flex: 1;
+      position: relative;
+
+      > .inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 35px 30px 30px;
+        width: 100%;
+        height: 100%;
+      }
+
+      .cardTitle {
+        color: $gulf;
+        text-align: center;
+        font-size: 25px;
+      }
+
+      .details {
+        list-style-type: disc;
+        color: $gulf;
+        font-family: $copy;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 27px;
+        margin: 0;
+        padding-left: 15px;
+        opacity: 0.75;
+      }
+
+      .actions {
+        display: flex;
+        margin-top: auto;
+        padding-top: 25px;
+        width: 100%;
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

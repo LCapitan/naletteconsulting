@@ -14,11 +14,11 @@ export function Home() {
   return (
     <div className={styles.home}>
       <div className={styles.content}>
-        <span className={styles.tag}>Certified CPA</span>
-        <h1>Here&#39;s where you&#39;ll put your heading</h1>
+        <span className={styles.tag}>CPAs & Business Advisor</span>
+        <h1>Forget accounting. Focus on your mission.</h1>
         <div className={styles.tagline}>
-          And here&#39;s where you can put a couple sentences about what you do.
-          Or maybe just about you.
+          Consulting, Outsourced Accounting and tax services specializing in the
+          not-for-profit industry
         </div>
         <div className={styles.actions}>
           <Button label="Services" secondary />

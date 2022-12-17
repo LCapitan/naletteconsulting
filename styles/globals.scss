@@ -8,7 +8,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: $copy;
-  overflow: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -40,8 +41,8 @@ html {
 .container {
   margin: 0 auto;
   width: 83%;
-  max-width: 1300px;
-  padding: 0 40px;
+  max-width: 1440px;
+  padding: 0;
 
   @include lg-max {
     width: 100%;

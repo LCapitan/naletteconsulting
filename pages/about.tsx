@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 
-import { Home, Intro, Services } from "../src/containers/index";
+import { About } from "../src/containers/index";
 
-const Homepage: NextPage = () => {
+const AboutPage: NextPage = () => {
   return (
     <>
       <NextSeo
@@ -25,12 +25,10 @@ const Homepage: NextPage = () => {
       />
 
       <main className="container">
-        <Home />
-        <Intro />
-        <Services />
+        <About />
       </main>
     </>
   );
 };
 
-export default Homepage;
+export default AboutPage;

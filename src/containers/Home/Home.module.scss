@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   gap: 25px;
+  padding: 0 0 50px;
   position: relative;
   width: 100%;
 
@@ -23,7 +24,7 @@
 
   .content {
     flex: 1;
-    padding-top: 100px;
+    padding-top: 50px;
 
     .tag {
       border-radius: 4px;
@@ -40,9 +41,9 @@
       -webkit-text-stroke: 2px $gulf;
       color: $gulf;
       font-family: $copy;
-      font-size: 55px;
+      font-size: 50px;
       font-weight: bold;
-      line-height: 73px;
+      line-height: 67px;
       margin: 0 0 20px;
     }
 
@@ -51,7 +52,7 @@
       font-family: $copy;
       font-size: 19px;
       font-weight: 300;
-      line-height: 37px;
+      line-height: 31px;
       margin: 0;
       max-width: 80%;
       opacity: 0.75;

@@ -2,125 +2,66 @@
 @import "../../../styles/breakpoints.scss";
 
 .about {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
   min-height: 100vh;
-  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
   position: relative;
-  padding-bottom: 100px;
+  width: 100%;
 
-  @include lg-max {
-    padding: 0 0 50px;
-  }
-
-  .wrapper {
-    background: rgba($mirage, .75);
-    backdrop-filter: blur(100px);
-    border-radius: 12px;
-    // box-shadow: 0px 10px 30px rgba(#000000, 0.5);
-    max-width: 900px;
-    margin: -190px auto 0;
-    padding: 45px;
+  .hero {
     position: relative;
-    z-index: 5;
+    bottom: -80px;
+    flex: 1;
 
-    @include sm-max {
-      background: none;
-      backdrop-filter: blur(0);
-      border-radius: 0;
-      padding: 0;
-      margin: 0 auto;
+    svg {
+      width: 150%;
+      height: auto;
     }
   }
 
-  .heroImg {
-    border-radius: 20px;
-    box-shadow: 0px 10px 30px rgba(#000000, 0.5);
-    margin: 50px 0 50px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+  .content {
+    flex: 1;
+    padding-top: 50px;
 
-    .desktop {
-      display: block;
+    .tag {
+      border-radius: 4px;
+      color: $gulf;
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 25px;
+      padding: 10px 12px 10px 0;
+      position: relative;
     }
 
-    .mobile {
-      display: none;
+    h1 {
+      -webkit-text-stroke: 2px $gulf;
+      color: $gulf;
+      font-family: $copy;
+      font-size: 45px;
+      font-weight: bold;
+      line-height: 57px;
+      margin: 0 0 20px;
     }
 
-    @include lg-max {
-      border-radius: 0;
-      margin: 0 -30px 50px;
-      width: calc(100% + 60px);
-    }
-
-    @include sm-max {
-
-      .desktop {
-        display: none;
-      }
-
-      .mobile {
-        display: block;
-        height: 300px;
-      }
-    }
-  }
-
-  .pageHeading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 50px;
-    width: 100%;
-
-    @include lg-max {
-      .cta {
-        display: none;
-      }
-    }
-
-    @include sm-max {
-      margin-bottom: 30px;
-    }
-
-    .pageTitle {
-      color: $white;
-      font-family: $title;
-      font-size: 95px;
-      line-height: 1;
+    .tagline {
+      color: $gulf;
+      font-family: $copy;
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 31px;
       margin: 0;
+      max-width: 80%;
+      opacity: 0.75;
+    }
 
-      @include lg-max {
-        font-size: 65px;
-      }
+    .actions {
+      margin: 45px 0 0;
     }
   }
 
-  .paragraph {
-    color: $white;
-    font-family: $copy;
-    font-size: 18px;
-    font-weight: $light;
-    line-height: 32px;
-    margin-bottom: 18px;
-  }
-
-  .actions {
-    display: flex;
-    gap: 15px;
-    margin-top: 45px;
-
-    @include lg-max {
-      justify-content: center;
-    }
-
-    @include sm-max {
-      justify-content: center;
-      flex-direction: column;
-    }
+  @include sm-max {
   }
 }

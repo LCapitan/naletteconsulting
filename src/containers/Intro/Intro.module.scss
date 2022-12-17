@@ -1,0 +1,101 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.intro {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 75px;
+  padding: 115px 0 100px;
+  position: relative;
+  width: 100%;
+
+  &:after {
+    background: rgba($spray, 0.08);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .bgImgs {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100vh;
+
+    .leftImg {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: 385px;
+      height: 400px;
+    }
+
+    .rightImg {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    .tag {
+      border-radius: 4px;
+      color: $gulf;
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 25px;
+      padding: 10px 12px 10px 0;
+      position: relative;
+    }
+
+    .title {
+      -webkit-text-stroke: 2px $gulf;
+      color: $gulf;
+      font-family: $copy;
+      font-size: 41px;
+      font-weight: bold;
+      line-height: 57px;
+      margin: 0 0 30px;
+    }
+
+    .tagline {
+      color: $gulf;
+      font-family: $copy;
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 31px;
+      margin: 0;
+      max-width: 600px;
+      opacity: 0.75;
+    }
+
+    .actions {
+      margin: 45px 0 0;
+    }
+  }
+}
