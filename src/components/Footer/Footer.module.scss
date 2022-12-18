@@ -2,9 +2,42 @@
 @import "../../../styles/breakpoints.scss";
 
 .footer {
-  padding: 150px 0 100px;
+  overflow: hidden;
+  padding: 150px 0 120px;
   position: relative;
   z-index: 100;
+
+  &:after {
+    background: $gulf;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .super {
+    opacity: 0.1;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-35%, -50%);
+  }
+
+  .logo {
+    svg {
+      width: 50px;
+      height: auto;
+
+      path {
+        fill: $white;
+      }
+    }
+  }
 
   .inner {
     display: flex;

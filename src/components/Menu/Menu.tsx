@@ -25,10 +25,10 @@ export default function Menu() {
           </Link>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <Link href="/work">Services</Link>
+          <Link href="#services">Services</Link>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <Link href="/work">Contact</Link>
+          <Link href="mailto:ben@naletteconsulting.com">Contact</Link>
         </li>
       </ul>
     </nav>

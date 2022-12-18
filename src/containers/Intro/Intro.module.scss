@@ -4,11 +4,11 @@
 .intro {
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
   gap: 25px;
   margin-top: 75px;
-  padding: 115px 0 100px;
+  padding: 75px 0 100px;
   position: relative;
   width: 100%;
 
@@ -27,16 +27,17 @@
 
   .bgImgs {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
     position: absolute;
-    bottom: 75px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     width: 100vw;
     height: 100vh;
 
     .leftImg {
+      display: none;
       margin: 0;
       padding: 0;
       position: relative;
@@ -45,22 +46,23 @@
     }
 
     .rightImg {
+      transform: scaleX(-1);
       margin: 0;
       padding: 0;
       position: relative;
-      width: 400px;
-      height: 400px;
+      width: 550px;
+      height: 550px;
     }
   }
 
   .content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     flex: 1;
+    max-width: 700px;
     padding-top: 50px;
     padding-bottom: 50px;
-    text-align: center;
 
     .tag {
       border-radius: 4px;
@@ -90,7 +92,6 @@
       font-weight: 300;
       line-height: 31px;
       margin: 0;
-      max-width: 600px;
       opacity: 0.75;
     }
 

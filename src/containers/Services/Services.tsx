@@ -14,26 +14,33 @@ export function Services() {
   // const { pricingModalOpen, setPricingModalOpen } = useContext(UIContext);
 
   return (
-    <div className={styles.services}>
+    <div id="services" className={styles.services}>
       <div className={styles.inner}>
-        <h2 className={styles.title}>Our Services</h2>
+        <div className={styles.heading}>
+          <h2 className={styles.title}>Our Services</h2>
+          <div className={styles.tagline}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            dictum mi, id faucibus est. Vestibulum vehicula tortor a odio
+            accumsan viverra.
+          </div>
+        </div>
         <ul className={styles.serviceList}>
           <li className={styles.serviceListItem}>
             <div className={styles.inner}>
               <div>
                 <h3 className={styles.cardTitle}>Accounting</h3>
                 <ul className={styles.details}>
-                  <li>Ongoing outsourced accounting services</li>
-                  <li>Temporary CFO and controller functions</li>
-                  <li>External audit preparation assistance</li>
-                  <li>Budget planning and preparation</li>
-                  <li>Cash flow projections and analysis</li>
-                  <li>Accounting policy and procedure development</li>
+                  <li>Ongoing outsourced accounting services.</li>
+                  <li>Temporary CFO and controller functions.</li>
+                  <li>External audit preparation assistance.</li>
+                  <li>Budget planning and preparation.</li>
+                  <li>Cash flow projections and analysis.</li>
+                  <li>Accounting policy and procedure development.</li>
                 </ul>
               </div>
-              <div className={styles.actions}>
+              {/* <div className={styles.actions}>
                 <Button secondary label="Learn more" />
-              </div>
+              </div> */}
             </div>
           </li>
           <li className={styles.serviceListItem}>
@@ -52,9 +59,9 @@ export function Services() {
                   <li>Public support planning and consulting</li>
                 </ul>
               </div>
-              <div className={styles.actions}>
+              {/* <div className={styles.actions}>
                 <Button secondary label="Learn more" />
-              </div>
+              </div> */}
             </div>
           </li>
           <li className={styles.serviceListItem}>
@@ -66,9 +73,9 @@ export function Services() {
                   <li>Technical accounting training and webinars</li>
                 </ul>
               </div>
-              <div className={styles.actions}>
+              {/* <div className={styles.actions}>
                 <Button secondary label="Learn more" />
-              </div>
+              </div> */}
             </div>
           </li>
         </ul>

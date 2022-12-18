@@ -1,13 +1,22 @@
 import Link from "next/link";
 import React, { useContext } from "react";
-import { LinkedIn, Instagram, Twitter, Facebook } from "../Icons";
+import { LinkedIn, Instagram, Twitter, Facebook, Logo } from "../Icons";
 
 import styles from "./Footer.module.scss";
 
-export default function Footer() {
+export function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className="container">footer</div>
+      <div className={styles.super}>
+        <Logo />
+      </div>
+      <div className="container">
+        <div className={styles.inner}>
+          <div className={styles.logo}>
+            <Logo />
+          </div>
+        </div>
+      </div>
     </footer>
   );
 }

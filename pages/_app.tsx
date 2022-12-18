@@ -1,7 +1,7 @@
 import "../styles/globals.scss";
 import type { AppProps } from "next/app";
 import UIContextProvider from "../src/providers/UIContextProvider";
-import { Header } from "../src/components";
+import { Header, Footer } from "../src/components";
 import { DefaultSeo } from "next-seo";
 import Head from "next/head";
 
@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <Header />
         <Component {...pageProps} />
-        {/* <Footer /> */}
+        <Footer />
       </>
     </UIContextProvider>
   );
