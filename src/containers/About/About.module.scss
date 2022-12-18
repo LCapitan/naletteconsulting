@@ -8,13 +8,15 @@
   align-items: center;
   justify-content: center;
   gap: 25px;
-  padding: 100px 0 75px;
+  padding: 50px 0 75px;
   position: relative;
   width: 100%;
 
   .mainContent {
+    min-height: 100vh;
     position: relative;
     width: 100%;
+    gap: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,10 +63,11 @@
   }
 
   .hero {
+    aspect-ratio: 1/1;
     border-radius: 30px;
-    flex: 1;
     overflow: hidden;
     position: relative;
+    width: 45%;
 
     img {
       margin-bottom: -5px;
@@ -116,7 +119,122 @@
       top: calc(100% + 20px);
     }
   }
+}
 
-  @include sm-max {
+@include vp-max(1100) {
+  .about {
+    .mainContent {
+      gap: 25px;
+
+      .content {
+        .tag {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .hero {
+      width: 35%;
+    }
+  }
+}
+
+@include md-max {
+  .about {
+    .mainContent {
+      min-height: 0;
+      padding-top: 100px;
+      align-items: flex-start;
+      flex-direction: column-reverse;
+      gap: 25px;
+
+      .content {
+        .tag {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    .bio {
+      margin: 40% 0 25px;
+      padding-top: 50px;
+
+      > .inner {
+        border-radius: 20px;
+        flex-direction: column;
+        padding: 25px;
+      }
+
+      .imageWrapper {
+        position: relative;
+        width: 50%;
+
+        .image {
+          border-radius: 20px;
+          flex: 1;
+          overflow: hidden;
+          position: absolute;
+          bottom: -25px;
+          aspect-ratio: 1/1;
+          max-width: 75%;
+        }
+      }
+    }
+
+    .hero {
+      width: 45%;
+    }
+  }
+}
+
+@include sm-max {
+  .about {
+    .mainContent {
+      min-height: 0;
+      padding-top: 0;
+      align-items: flex-start;
+      flex-direction: column-reverse;
+      gap: 25px;
+
+      .content {
+        .tagline {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .bio {
+      margin: 70% 0 25px;
+      padding-top: 50px;
+
+      > .inner {
+        border-radius: 20px;
+        flex-direction: column;
+        padding: 25px;
+      }
+
+      .imageWrapper {
+        position: relative;
+        width: 100%;
+
+        .image {
+          border-radius: 20px;
+          flex: 1;
+          overflow: hidden;
+          position: absolute;
+          bottom: -25px;
+          aspect-ratio: 1/1;
+          max-width: 75%;
+        }
+      }
+    }
+
+    .hero {
+      border-radius: 0;
+      margin-top: -50px;
+      margin-left: -40px;
+      margin-right: -40px;
+      width: calc(100% + 80px);
+    }
   }
 }

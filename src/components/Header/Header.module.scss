@@ -15,10 +15,6 @@
     width: 100%;
   }
 
-  @include md-max {
-    padding: 0 40px;
-  }
-
   .logo {
     transform: scale(1);
     transition: 0.25s ease;
@@ -34,15 +30,23 @@
     &:focus {
       transform: scale(1.1);
     }
-
-    @include lg-max {
-      opacity: 0;
-      visibility: hidden;
-    }
   }
 
   .menuToggle {
+    display: none;
     position: relative;
     z-index: 15;
+  }
+}
+
+@include md-max {
+  .header {
+    .cta {
+      display: none;
+    }
+
+    .menuToggle {
+      display: block;
+    }
   }
 }

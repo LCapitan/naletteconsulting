@@ -25,34 +25,15 @@
     z-index: -1;
   }
 
-  .bgImgs {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  .image {
+    margin: 0;
+    padding: 0;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100vw;
-    height: 100vh;
-
-    .leftImg {
-      display: none;
-      margin: 0;
-      padding: 0;
-      position: relative;
-      width: 385px;
-      height: 400px;
-    }
-
-    .rightImg {
-      transform: scaleX(-1);
-      margin: 0;
-      padding: 0;
-      position: relative;
-      width: 550px;
-      height: 550px;
-    }
+    top: 55%;
+    left: -15vw;
+    transform: translateY(-50%) scaleX(-1);
+    aspect-ratio: 1/1;
+    width: 40vw;
   }
 
   .content {
@@ -60,9 +41,9 @@
     align-items: flex-start;
     flex-direction: column;
     flex: 1;
-    max-width: 700px;
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-left: 35vw;
 
     .tag {
       border-radius: 4px;
@@ -97,6 +78,85 @@
 
     .actions {
       margin: 45px 0 0;
+    }
+  }
+}
+
+@include vp-max(1265) {
+  .intro {
+    .image {
+      width: 45vw;
+    }
+  }
+}
+
+@include md-max {
+  .intro {
+    flex-direction: column-reverse;
+    gap: 0;
+
+    .image {
+      margin-top: -50px;
+      position: relative;
+      top: 0;
+      left: auto;
+      right: -50px;
+      transform: translateY(0) scaleX(1);
+      width: 65vw;
+    }
+
+    .content {
+      flex-direction: column;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+
+      .title {
+        font-size: 35px;
+        line-height: 43px;
+      }
+
+      .tagline {
+        font-size: 17px;
+        line-height: 27px;
+      }
+
+      .actions {
+        margin: 35px 0 0;
+      }
+    }
+  }
+}
+
+@include sm-max {
+  .intro {
+    margin-top: -25px;
+    padding: 75px 0 25px;
+
+    .image {
+      margin-top: 0;
+      width: 85vw;
+    }
+
+    .content {
+      .title {
+        -webkit-text-stroke: 1.5px $gulf;
+        font-size: 31px;
+        line-height: 37px;
+      }
+
+      .tagline {
+        font-size: 15px;
+        line-height: 23px;
+      }
+
+      .actions {
+        width: 100%;
+
+        a {
+          width: 100%;
+        }
+      }
     }
   }
 }

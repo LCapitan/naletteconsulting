@@ -21,10 +21,12 @@ const Header = () => {
           </Link>
         </div>
         <Menu />
-        <Button label="Become a Client" />
-        {/* <div className={styles.menuToggle}>
+        <div className={styles.cta}>
+          <Button label="Become a Client" />
+        </div>
+        <div className={styles.menuToggle}>
           <Hamburger />
-        </div> */}
+        </div>
       </div>
     </header>
   );

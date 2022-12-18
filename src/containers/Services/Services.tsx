@@ -29,14 +29,12 @@ export function Services() {
             <div className={styles.inner}>
               <div>
                 <h3 className={styles.cardTitle}>Accounting</h3>
-                <ul className={styles.details}>
-                  <li>Ongoing outsourced accounting services.</li>
-                  <li>Temporary CFO and controller functions.</li>
-                  <li>External audit preparation assistance.</li>
-                  <li>Budget planning and preparation.</li>
-                  <li>Cash flow projections and analysis.</li>
-                  <li>Accounting policy and procedure development.</li>
-                </ul>
+                <div className={styles.details}>
+                  Ongoing outsourced accounting services. Temporary CFO and
+                  controller functions. External audit preparation assistance.
+                  Budget planning and preparation. Cash flow projections and
+                  analysis. Accounting policy and procedure development.
+                </div>
               </div>
               {/* <div className={styles.actions}>
                 <Button secondary label="Learn more" />
@@ -47,17 +45,12 @@ export function Services() {
             <div className={styles.inner}>
               <div>
                 <h3 className={styles.cardTitle}>Taxes</h3>
-                <ul className={styles.details}>
-                  <li>
-                    Form 990 (including 990EZ and 990N), 990-T and 990-PF
-                    preparation
-                  </li>
-                  <li>Unrelated business income analysis and planning</li>
-                  <li>
-                    Form 1023 and 1024 exemption application and restoration
-                  </li>
-                  <li>Public support planning and consulting</li>
-                </ul>
+                <div className={styles.details}>
+                  Form 990 (including 990EZ and 990N), 990-T and 990-PF
+                  preparation. Unrelated business income analysis and planning.
+                  Form 1023 and 1024 exemption application and restoration.
+                  Public support planning and consulting.
+                </div>
               </div>
               {/* <div className={styles.actions}>
                 <Button secondary label="Learn more" />
@@ -68,10 +61,10 @@ export function Services() {
             <div className={styles.inner}>
               <div>
                 <h3 className={styles.cardTitle}>Advising</h3>
-                <ul className={styles.details}>
-                  <li>Accounting standard implementation</li>
-                  <li>Technical accounting training and webinars</li>
-                </ul>
+                <div className={styles.details}>
+                  Accounting standard implementation. Technical accounting
+                  training and webinars.
+                </div>
               </div>
               {/* <div className={styles.actions}>
                 <Button secondary label="Learn more" />

@@ -7,10 +7,9 @@
   right: 0;
   width: 75px;
   height: 29px;
-  transform: rotate(-90deg);
 
   &:before {
-    background: lighten($mirage, 40%);
+    background: lighten($gulf, 40%);
     border-radius: 10px;
     content: "";
     display: block;
@@ -25,7 +24,7 @@
   }
 
   &:after {
-    background: lighten($mirage, 40%);
+    background: lighten($gulf, 40%);
     border-radius: 10px;
     content: "";
     display: block;
@@ -40,7 +39,7 @@
   }
 
   > div {
-    background: lighten($mirage, 40%);
+    background: lighten($gulf, 40%);
     border-radius: 10px;
     display: block;
     position: absolute;
@@ -55,32 +54,6 @@
   &:hover,
   &:focus {
     cursor: pointer;
-
-    &:before {
-      background: $aquamarine;
-      right: 5px;
-      width: 40px;
-    }
-
-    &:after {
-      background: $aquamarine;
-      right: 10px;
-      width: 50px;
-    }
-
-    > div {
-      background: $aquamarine;
-      width: 75px;
-    }
-
-    @include sm-max {
-      &:before,
-      &:after,
-      > div {
-        right: 0;
-        width: 38px;
-      }
-    }
   }
 
   &.open {

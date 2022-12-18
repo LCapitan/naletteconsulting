@@ -8,22 +8,13 @@ import { Button } from "../../components";
 const Intro = () => {
   return (
     <div id="about" className={styles.intro}>
-      <div className={styles.bgImgs}>
-        <figure className={styles.leftImg}>
-          <Image
-            src="https://res.cloudinary.com/austinmel/image/upload/v1671310459/naletteconsulting/intro-leftImg.svg"
-            alt=""
-            layout="fill"
-          />
-        </figure>
-        <figure className={styles.rightImg}>
-          <Image
-            src="https://res.cloudinary.com/austinmel/image/upload/v1671311473/naletteconsulting/intro-rightImg.svg"
-            alt=""
-            layout="fill"
-          />
-        </figure>
-      </div>
+      <figure className={styles.image}>
+        <Image
+          src="https://res.cloudinary.com/austinmel/image/upload/v1671311473/naletteconsulting/intro-rightImg.svg"
+          alt=""
+          layout="fill"
+        />
+      </figure>
       <div className={styles.content}>
         <span className={styles.tag}>Overview</span>
         <h2 className={styles.title}>Accounting for Change</h2>
