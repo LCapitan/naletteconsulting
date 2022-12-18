@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Kanit:ital,wght@0,100;0,300;1,400&family=DM+Sans:wght@400;500;700&display=swap");
 
 @import "./styles/variables.scss";
 @import "./styles/breakpoints.scss";
 
 html,
 body {
-  color: $gulf;
+  color: rgba(#2d2d2d, 0.5);
   font-family: $copy;
-  font-size: 19px;
+  font-size: 15px;
+  line-height: 27px;
   font-weight: 300;
-  line-height: 31px;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -109,4 +109,49 @@ a {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: $gulf;
+  font-family: $title;
+  font-weight: 500;
+  margin: 0 0 25px;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 67px;
+
+  @include sm-max {
+    font-size: 37px;
+    line-height: 43px;
+  }
+}
+
+h2 {
+  font-size: 41px;
+  line-height: 55px;
+
+  @include sm-max {
+    font-size: 37px;
+    line-height: 43px;
+  }
+}
+
+.tag {
+  border-radius: 4px;
+  color: $gulf;
+  display: inline-block;
+  font-family: $title;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  opacity: 0.5;
+  padding: 10px 12px 10px 0;
+  position: relative;
+  text-transform: uppercase;
 }

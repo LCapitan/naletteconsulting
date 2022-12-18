@@ -1,0 +1,35 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/breakpoints.scss";
+
+.contactForm {
+  display: flex;
+
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px 5px 0;
+
+    input,
+    textarea {
+      background: darken($white, 5%);
+      border: 1px solid transparent;
+      border-radius: none;
+      padding-left: 10px;
+      outline: none;
+      width: 200px;
+      height: 35px;
+
+      &:hover {
+        border: 1px solid rgba($gulf, 0.15);
+      }
+
+      &:focus {
+        border: 1px solid rgba($gulf, 1);
+      }
+    }
+
+    textarea {
+      resize: none;
+    }
+  }
+}

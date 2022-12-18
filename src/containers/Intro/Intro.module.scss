@@ -7,7 +7,7 @@
   align-items: flex-end;
   justify-content: flex-end;
   gap: 25px;
-  margin-top: 75px;
+  margin-top: 0;
   padding: 75px 0 100px;
   position: relative;
   width: 100%;
@@ -45,40 +45,15 @@
     padding-bottom: 50px;
     padding-left: 35vw;
 
-    .tag {
-      border-radius: 4px;
-      color: $gulf;
-      display: inline-block;
-      font-size: 15px;
-      font-weight: 500;
-      margin-bottom: 25px;
-      padding: 10px 12px 10px 0;
-      position: relative;
-    }
-
-    .title {
-      -webkit-text-stroke: 2px $gulf;
-      color: $gulf;
-      font-family: $copy;
-      font-size: 41px;
-      font-weight: bold;
-      line-height: 57px;
-      margin: 0 0 30px;
-    }
-
-    .tagline {
-      color: $gulf;
-      font-family: $copy;
-      font-size: 19px;
-      font-weight: 300;
-      line-height: 31px;
-      margin: 0;
-      opacity: 0.75;
-    }
-
     .actions {
       margin: 45px 0 0;
     }
+  }
+}
+
+@media screen and (min-height: 790px) {
+  .intro {
+    min-height: 0;
   }
 }
 
@@ -111,16 +86,6 @@
       padding-bottom: 0;
       padding-left: 0;
 
-      .title {
-        font-size: 35px;
-        line-height: 43px;
-      }
-
-      .tagline {
-        font-size: 17px;
-        line-height: 27px;
-      }
-
       .actions {
         margin: 35px 0 0;
       }
@@ -139,17 +104,6 @@
     }
 
     .content {
-      .title {
-        -webkit-text-stroke: 1.5px $gulf;
-        font-size: 31px;
-        line-height: 37px;
-      }
-
-      .tagline {
-        font-size: 15px;
-        line-height: 23px;
-      }
-
       .actions {
         width: 100%;
 

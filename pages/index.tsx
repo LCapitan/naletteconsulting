@@ -1,7 +1,8 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 
-import { Home, Intro, Services } from "../src/containers/index";
+import { ContactGeneral, Home, Intro, Services } from "../src/containers/index";
+import { ContactForm } from "../src/components/index";
 
 const Homepage: NextPage = () => {
   return (
@@ -26,8 +27,9 @@ const Homepage: NextPage = () => {
 
       <main className="container">
         <Home />
-        <Intro />
         <Services />
+        <Intro />
+        <ContactGeneral />
       </main>
     </>
   );

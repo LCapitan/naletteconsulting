@@ -21,9 +21,6 @@ const Header = () => {
           </Link>
         </div>
         <Menu />
-        <div className={styles.cta}>
-          <Button label="Become a Client" />
-        </div>
         <div className={styles.menuToggle}>
           <Hamburger />
         </div>

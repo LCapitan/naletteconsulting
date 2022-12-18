@@ -25,7 +25,6 @@
       flex: 1;
 
       .tag {
-        border-radius: 4px;
         color: $gulf;
         display: inline-block;
         font-size: 15px;
@@ -48,9 +47,7 @@
       .tagline {
         color: $gulf;
         font-family: $copy;
-        font-size: 19px;
         font-weight: 300;
-        line-height: 31px;
         margin: 0;
         max-width: 80%;
         opacity: 0.75;
@@ -64,7 +61,6 @@
 
   .hero {
     aspect-ratio: 1/1;
-    border-radius: 30px;
     overflow: hidden;
     position: relative;
     width: 45%;
@@ -75,16 +71,15 @@
   }
 
   .bio {
-    margin: 50px 0 150px;
+    margin: 25px 0 150px;
     padding-top: 75px;
     width: 100%;
 
     > .inner {
       background: rgba($spray, 0.2);
-      border-radius: 30px;
       display: flex;
-      gap: 30px;
-      padding: 45px;
+      gap: 50px;
+      padding: 35px;
       position: relative;
     }
 
@@ -93,11 +88,10 @@
       min-width: 40%;
 
       .image {
-        border-radius: 20px;
         flex: 1;
         overflow: hidden;
         position: absolute;
-        aspect-ratio: 1/1.2;
+        aspect-ratio: 1/1.3;
         min-width: 100%;
 
         img {
@@ -108,7 +102,6 @@
 
     .funFact {
       background: $spray;
-      border-radius: 20px;
       color: $gulf;
       display: flex;
       gap: 30px;
@@ -160,7 +153,6 @@
       padding-top: 50px;
 
       > .inner {
-        border-radius: 20px;
         flex-direction: column;
         padding: 25px;
       }
@@ -170,7 +162,6 @@
         width: 50%;
 
         .image {
-          border-radius: 20px;
           flex: 1;
           overflow: hidden;
           position: absolute;
@@ -208,7 +199,6 @@
       padding-top: 50px;
 
       > .inner {
-        border-radius: 20px;
         flex-direction: column;
         padding: 25px;
       }
@@ -218,7 +208,6 @@
         width: 100%;
 
         .image {
-          border-radius: 20px;
           flex: 1;
           overflow: hidden;
           position: absolute;
@@ -230,7 +219,6 @@
     }
 
     .hero {
-      border-radius: 0;
       margin-top: -50px;
       margin-left: -40px;
       margin-right: -40px;

@@ -14,7 +14,7 @@ export function Home() {
   return (
     <div className={styles.home}>
       <div className={styles.content}>
-        <span className={styles.tag}>CPAs & Business Advisor</span>
+        {/* <span className={styles.tag}>CPAs & Business Advisor</span> */}
         <h1>Forget accounting. Focus on your mission.</h1>
         <div className={styles.tagline}>
           Consulting, Outsourced Accounting and tax services specializing in the
