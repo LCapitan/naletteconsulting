@@ -24,35 +24,6 @@
     .content {
       flex: 1;
 
-      .tag {
-        color: $gulf;
-        display: inline-block;
-        font-size: 15px;
-        font-weight: 500;
-        margin-bottom: 25px;
-        padding: 10px 12px 10px 0;
-        position: relative;
-      }
-
-      h1 {
-        -webkit-text-stroke: 2px $gulf;
-        color: $gulf;
-        font-family: $copy;
-        font-size: 45px;
-        font-weight: bold;
-        line-height: 57px;
-        margin: 0 0 20px;
-      }
-
-      .tagline {
-        color: $gulf;
-        font-family: $copy;
-        font-weight: 300;
-        margin: 0;
-        max-width: 80%;
-        opacity: 0.75;
-      }
-
       .actions {
         margin: 45px 0 0;
       }
