@@ -16,7 +16,13 @@ export function Footer() {
           <div className={styles.logo}>
             <Logo />
           </div>
-          <address>11166 Fairfax Blvd Ste 500 #1005 Fairfax, VA 22030</address>
+          <address>
+            11166 Fairfax Blvd
+            <br />
+            Ste 500 #1005
+            <br />
+            Fairfax, VA 22030
+          </address>
           <div className={styles.desktop}>(860) 707-3000</div>
           <div className={styles.mobile}>
             <a href="tel:8607073000">(860) 707-3000</a>
