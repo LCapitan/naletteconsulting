@@ -17,7 +17,7 @@ export function Home() {
         <span className="tag">CPAs & Business Advisors</span>
         <h1>Let us handle the numbers while you make a difference.</h1>
         <div className={styles.tagline}>
-          Providing utsourced accounting, tax services, and consulting services
+          Providing outsourced accounting, tax services, and consulting services
           specializing in the not-for-profit industry
         </div>
         <div className={styles.actions}>
