@@ -10,7 +10,6 @@ const About = () => {
     <div className={styles.about}>
       <div className={styles.mainContent}>
         <div className={styles.content}>
-          <span className="tag">CPA, Founder, CEO</span>
           <h1>Nalette Consulting</h1>
           <div className={styles.tagline}>
             Specializing in the not-for-profit industry, Nalette Consulting
@@ -40,8 +39,8 @@ const About = () => {
           />
         </div>
         <div className={styles.content}>
-          <span className={styles.tag}>CPA, Founder, CEO</span>
-          <h1>Benjamin Nalette</h1>
+          {/* <span className="tag">CPA, Founder, CEO</span> */}
+          <h1>Benjamin Nalette, CPA</h1>
           <div className={styles.tagline}>
             Ben Nalette is the Founder of Nalette Consulting. He is a CPA with
             over a decade of experience specializing in the not-for-profit
@@ -56,7 +55,7 @@ const About = () => {
 
       <div id="aboutBen" className={styles.bio}>
         <div className={styles.inner}>
-          {/* <div className={styles.imageWrapper}>
+          <div className={styles.imageWrapper}>
             <div className={styles.image}>
               <Image
                 src="https://res.cloudinary.com/austinmel/image/upload/v1671319748/naletteconsulting/ben-family.jpg"
@@ -64,7 +63,7 @@ const About = () => {
                 fill
               />
             </div>
-          </div> */}
+          </div>
           <div>
             <h2 className={styles.title}>More about Benjamin</h2>
             <div className={styles.content}>
