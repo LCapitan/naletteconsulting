@@ -14,11 +14,11 @@ export function Home() {
   return (
     <div className={styles.home}>
       <div className={styles.content}>
-        {/* <span className={styles.tag}>CPAs & Business Advisor</span> */}
+        <span className="tag">CPAs & Business Advisors</span>
         <h1>Forget accounting. Focus on your mission.</h1>
         <div className={styles.tagline}>
-          Consulting, Outsourced Accounting and tax services specializing in the
-          not-for-profit industry
+          Outsourced accounting, tax services, and consulting specializing in
+          the not-for-profit industry
         </div>
         <div className={styles.actions}>
           <Button label="Meet Us" url="#about" secondary />

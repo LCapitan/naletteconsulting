@@ -17,7 +17,7 @@ export function Services() {
     <div id="services" className={styles.services}>
       <div className={styles.inner}>
         <div className={styles.heading}>
-          <h2 className={styles.title}>here&#39;s what we do</h2>
+          <h2 className={styles.title}>Here&#39;s what we do</h2>
           <div className={styles.tagline}></div>
         </div>
         <ul className={styles.serviceList}>
@@ -41,7 +41,7 @@ export function Services() {
           </li>
           <li className={styles.serviceListItem}>
             <div className={styles.inner}>
-              <h3 className={styles.cardTitle}>Advising</h3>
+              <h3 className={styles.cardTitle}>Consulting</h3>
               <div className={styles.details}>
                 Accounting standard implementation. Technical training and
                 webinars.

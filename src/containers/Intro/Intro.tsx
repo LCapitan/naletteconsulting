@@ -16,7 +16,6 @@ const Intro = () => {
         />
       </figure>
       <div className={styles.content}>
-        <span className="tag">CPAs & Business Advisors</span>
         <h2 className={styles.title}>Accounting for Change</h2>
         <div className={styles.tagline}>
           Specializing in the not-for-profit industry, Nalette Consulting prides
