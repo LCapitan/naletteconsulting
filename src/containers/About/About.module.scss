@@ -13,13 +13,38 @@
   width: 100%;
 
   .mainContent {
-    min-height: 100vh;
-    position: relative;
-    width: 100%;
-    gap: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 50px;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+
+    .content {
+      flex: 1;
+
+      .actions {
+        margin: 45px 0 0;
+      }
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+
+      svg {
+        width: 50%;
+        height: auto;
+      }
+    }
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 
     .content {
       flex: 1;
