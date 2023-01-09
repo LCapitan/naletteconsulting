@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import cx from 'classnames';
+import Link from "next/link";
+import cx from "classnames";
 
 // styles
-import styles from './Button.module.scss';
+import styles from "./Button.module.scss";
 
 // const styleClass = ['primary', 'secondary'];
 
@@ -13,30 +13,56 @@ interface ButtonProps {
   className?: string;
   onClick?: any;
   external?: boolean;
+  type?: string;
+  disabled?: any;
 }
 
-export function Button({ label, url, secondary, onClick, className, external }: ButtonProps) {
-
+export function Button({
+  label,
+  url,
+  secondary,
+  onClick,
+  className,
+  external,
+}: ButtonProps) {
   if (url && external) {
     return (
-      <a href={url} className={cx(styles.button, secondary ? styles.secondary : styles.primary)} target="blank" rel="noreferrer">
+      <a
+        href={url}
+        className={cx(
+          styles.button,
+          secondary ? styles.secondary : styles.primary
+        )}
+        target="blank"
+        rel="noreferrer"
+      >
         {label}
       </a>
     );
   } else if (url) {
     return (
-      <a href={url} className={cx(styles.button, secondary ? styles.secondary : styles.primary)}>
+      <a
+        href={url}
+        className={cx(
+          styles.button,
+          secondary ? styles.secondary : styles.primary
+        )}
+      >
         {label}
       </a>
     );
   } else {
     return (
       <button
-        className={cx(styles.button, secondary ? styles.secondary : styles.primary, className && styles[className])}
-        onClick={onClick}>
+        className={cx(
+          styles.button,
+          secondary ? styles.secondary : styles.primary,
+          className && styles[className]
+        )}
+        onClick={onClick}
+      >
         {label}
       </button>
-    )
+    );
   }
-
 }

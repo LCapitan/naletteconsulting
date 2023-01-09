@@ -3,21 +3,24 @@
 
 .contactForm {
   display: flex;
+  flex-direction: column;
+  margin: 25px 0 0;
+  width: 75%;
 
   .formGroup {
     display: flex;
     flex-direction: column;
-    padding: 5px 10px 5px 0;
+    padding: 5px 0 5px 0;
 
     input,
     textarea {
-      background: darken($white, 5%);
+      background: darken($white, 2%);
       border: 1px solid transparent;
       border-radius: none;
       padding-left: 10px;
       outline: none;
-      width: 200px;
-      height: 35px;
+      width: 100%;
+      height: 42px;
 
       &:hover {
         border: 1px solid rgba($gulf, 0.15);
@@ -29,7 +32,13 @@
     }
 
     textarea {
+      font-family: $copy;
       resize: none;
     }
+  }
+
+  button {
+    margin-top: 15px;
+    width: 100%;
   }
 }

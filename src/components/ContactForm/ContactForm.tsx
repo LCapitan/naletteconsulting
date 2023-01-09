@@ -1,10 +1,11 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import { Button } from "../Button";
 
 import styles from "./ContactForm.module.scss";
 
 export function ContactForm() {
-  const [state, handleSubmit] = useForm("xjvdbgzb");
+  const [state, handleSubmit] = useForm("moqzajbn");
   if (state.succeeded) {
     return <p>Thanks for joining!</p>;
   }
@@ -41,9 +42,12 @@ export function ContactForm() {
         />
       </div>
 
-      <button type="submit" disabled={state.submitting}>
-        Submit
-      </button>
+      <Button
+        secondary
+        label="Submit"
+        type="submit"
+        disabled={state.submitting}
+      />
     </form>
   );
 }

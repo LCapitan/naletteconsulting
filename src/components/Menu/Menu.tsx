@@ -24,12 +24,12 @@ export default function Menu() {
             About
           </Link>
         </li>
-        <li onClick={() => setMenuOpen(false)}>
-          <Link href="#services">Services</Link>
-        </li>
         {/* <li onClick={() => setMenuOpen(false)}>
-          <Link href="mailto:ben@naletteconsulting.com">Contact</Link>
+          <Link href="#services">Services</Link>
         </li> */}
+        <li onClick={() => setMenuOpen(false)}>
+          <Link href="/contact">Contact</Link>
+        </li>
       </ul>
     </nav>
   );

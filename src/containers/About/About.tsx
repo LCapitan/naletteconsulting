@@ -40,7 +40,7 @@ const About = () => {
         </div>
         <div className={styles.content}>
           {/* <span className="tag">CPA, Founder, CEO</span> */}
-          <h1>Benjamin Nalette, CPA</h1>
+          <h2>Benjamin Nalette, CPA</h2>
           <div className={styles.tagline}>
             Ben Nalette is the Founder of Nalette Consulting. He is a CPA with
             over a decade of experience specializing in the not-for-profit

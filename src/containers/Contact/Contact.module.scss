@@ -9,6 +9,7 @@
   padding: 50px 0;
   position: relative;
   width: 100%;
+  min-height: 100vh;
 
   &:after {
     content: "";
@@ -25,6 +26,22 @@
   > .inner {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .hero {
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    position: relative;
+    width: 45%;
+
+    img {
+      margin-bottom: -5px;
+    }
   }
 }
