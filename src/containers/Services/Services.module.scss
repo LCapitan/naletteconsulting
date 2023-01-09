@@ -88,19 +88,22 @@
   }
 }
 
-@media screen and (min-height: 790px) {
-  .services {
-    min-height: 0;
-  }
-}
-
 @include lg-max {
   .services {
+    > .inner {
+      flex-direction: column;
+    }
+
+    .heading {
+      margin-bottom: 0;
+      width: 75%;
+    }
+
     .serviceList {
       flex-direction: column;
+      padding: 0;
 
       .serviceListItem {
-        background: #ffffff;
         flex: 1;
         position: relative;
 

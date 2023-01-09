@@ -41,4 +41,8 @@
     margin-top: 15px;
     width: 100%;
   }
+
+  @include md-max {
+    width: 100%;
+  }
 }
