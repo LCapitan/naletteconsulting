@@ -7,7 +7,7 @@ const AboutPage: NextPage = () => {
   return (
     <>
       <NextSeo
-        title="Home | Nalette Consulting"
+        title="About | Nalette Consulting"
         description="Professional CPA from Virginia, US."
         defaultTitle="Welcome to Austin's Portfolio"
         canonical="https://www.naletteconsulting.com/"

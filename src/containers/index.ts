@@ -6,4 +6,5 @@ export * from "./Home";
 export * from "./Intro";
 export * from "./NoContent";
 export * from "./Services";
+export * from "./ServicesContent";
 export * from "./WorkContent";

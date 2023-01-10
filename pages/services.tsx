@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
 import { NextSeo } from "next-seo";
 
-import { ContactGeneral } from "../src/containers/index";
+import { ServicesContent } from "../src/containers/index";
 
-const ContactPage: NextPage = () => {
+const AboutPage: NextPage = () => {
   return (
     <>
       <NextSeo
-        title="Contact | Nalette Consulting"
+        title="Services | Nalette Consulting"
         description="Professional CPA from Virginia, US."
         defaultTitle="Welcome to Austin's Portfolio"
         canonical="https://www.naletteconsulting.com/"
@@ -25,10 +25,10 @@ const ContactPage: NextPage = () => {
       />
 
       <main className="container">
-        <ContactGeneral />
+        <ServicesContent />
       </main>
     </>
   );
 };
 
-export default ContactPage;
+export default AboutPage;
