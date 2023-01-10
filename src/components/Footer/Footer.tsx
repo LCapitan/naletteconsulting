@@ -13,20 +13,33 @@ export function Footer() {
       </div>
       <div className="container">
         <div className={styles.inner}>
+          <div className={styles.contact}>
+            <div className={styles.address}>
+              <h4>Address</h4>
+              <address>
+                11166 Fairfax Blvd, Suite 500 #1005
+                <br />
+                Fairfax, VA 22030
+              </address>
+            </div>
+            <div className={styles.phone}>
+              <h4>Phone</h4>
+              <div className={styles.desktop}>(703) 436-2622</div>
+              <div className={styles.mobile}>
+                <a href="tel:7034362622">(703) 436-2622</a>
+              </div>
+            </div>
+          </div>
+
           <div className={styles.logo}>
             <Logo />
+            <div className={styles.namemark}>
+              <span className={styles.nalette}>Nalette</span>
+              <span className={styles.consulting}>Consulting</span>
+            </div>
           </div>
-          <address>
-            11166 Fairfax Blvd
-            <br />
-            Ste 500 #1005
-            <br />
-            Fairfax, VA 22030
-          </address>
-          <div className={styles.desktop}>(860) 707-3000</div>
-          <div className={styles.mobile}>
-            <a href="tel:8607073000">(860) 707-3000</a>
-          </div>
+
+          <div className={styles.space}>&nbsp;</div>
         </div>
       </div>
     </footer>
