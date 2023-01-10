@@ -23,9 +23,6 @@ const About = () => {
             the responsive service you expect.
           </div>
         </div>
-        <div className={styles.logo}>
-          <Logo gradient />
-        </div>
       </div>
 
       <div className={styles.profile}>

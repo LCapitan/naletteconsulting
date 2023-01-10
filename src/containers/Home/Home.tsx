@@ -21,7 +21,7 @@ export function Home() {
           specializing in the not-for-profit industry
         </div>
         <div className={styles.actions}>
-          <Button label="Meet Us" url="#about" secondary />
+          <Button label="Meet Us" url="/about" secondary />
         </div>
       </div>
       <div className={styles.hero}>

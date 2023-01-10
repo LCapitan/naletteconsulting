@@ -29,7 +29,7 @@ const Intro = () => {
           requirements.
         </div>
         <div className={styles.actions}>
-          <Button label="Services" url="#services" secondary />
+          <Button label="View Services" url="/services" secondary />
         </div>
       </div>
     </div>
