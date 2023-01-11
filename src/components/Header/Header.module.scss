@@ -45,6 +45,10 @@
 
 @include md-max {
   .header {
+    background: transparent;
+    backdrop-filter: blur(0px);
+    padding: 30px;
+
     .cta {
       display: none;
     }
