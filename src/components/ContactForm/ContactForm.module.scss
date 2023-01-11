@@ -4,19 +4,22 @@
 .contactForm {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   margin: 25px 0 0;
   width: 75%;
 
   .formGroup {
     display: flex;
     flex-direction: column;
+    gap: 7px;
     padding: 5px 0 5px 0;
 
     input,
     textarea {
       background: darken($white, 2%);
       border: 1px solid transparent;
-      border-radius: none;
+      border-radius: 4px;
+      font-family: $copy;
       padding-left: 10px;
       outline: none;
       width: 100%;
@@ -33,6 +36,7 @@
 
     textarea {
       font-family: $copy;
+      padding-top: 10px;
       resize: none;
     }
   }

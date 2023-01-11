@@ -13,7 +13,7 @@ export function ContactForm() {
     <form className={styles.contactForm} onSubmit={handleSubmit}>
       <div className={styles.formGroup}>
         <label htmlFor="Name">Name</label>
-        <input id="Name" type="text" name="Name" placeholder="Ben Nalette" />
+        <input id="Name" type="text" name="Name" placeholder="Full Name" />
         <ValidationError prefix="Name" field="Name" errors={state.errors} />
       </div>
 
@@ -23,7 +23,7 @@ export function ContactForm() {
           id="email"
           type="email"
           name="email"
-          placeholder="ben@naletteconsulting.com"
+          placeholder="Email Address"
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
       </div>
@@ -33,7 +33,7 @@ export function ContactForm() {
         <textarea
           id="message"
           name="message"
-          placeholder="Type a message here"
+          placeholder="Type your message here"
         />
         <ValidationError
           prefix="Message"
